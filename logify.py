@@ -10,6 +10,6 @@ class Logify(object):
 		result=self.dbhandler.commit(type=type,message=message)
 		return result
 
-	def readerrors(self,type):
+	def readlogs(self,type):
 		result=self.dbhandler.getlogfromtype(type=type)
 		return result
